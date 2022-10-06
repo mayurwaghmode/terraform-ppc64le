@@ -2,8 +2,8 @@
 name: Check for new Terraform release
 
 on:
-  schedule:
-    - cron: '0 0 * * */7'
+  push:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
